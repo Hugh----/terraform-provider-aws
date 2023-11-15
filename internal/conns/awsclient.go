@@ -53,7 +53,7 @@ func (client *AWSClient) CredentialsProvider() aws_sdkv2.CredentialsProvider {
 	return client.awsConfig.Credentials
 }
 
-func (client *AWSClient) AwsConfig() aws_sdkv2.Config {
+func (client *AWSClient) AwsConfig() aws_sdkv2.Config { // nosemgrep:ci.aws-in-func-name
 	return client.awsConfig.Copy()
 }
 
